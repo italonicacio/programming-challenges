@@ -14,15 +14,10 @@ int main()
             max = aux;
             pos = i + 1;
         }
-            
-        
     }
 
     std::cout << max << std::endl
               << pos << std::endl;
-        
     
-
-
     return 0;
 }
