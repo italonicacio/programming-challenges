@@ -1,8 +1,4 @@
 #include <stack>
-#include <string>
-#include <iostream>
-
-using namespace std;
 
 class Solution {
 public:
@@ -69,7 +65,6 @@ public:
 
         for(int i = 0; i < s.size(); ++i) {
             char c = s[i];
-            std::cout << "char i " << c << " " << i << std::endl; 
             stack.push(c);
             
             if(IsOpenBrackets(c)) {
@@ -97,13 +92,3 @@ public:
         return true;
     }
 };
-
-
-int main() {
-    std::string p = "()[]{}";
-
-    Solution sol;
-    std::cout << p << std::endl;
-    bool result = sol.isValid(p);
-    std::cout << "result: " << result << std::endl;
-}
